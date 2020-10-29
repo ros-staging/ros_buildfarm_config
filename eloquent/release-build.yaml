@@ -20,7 +20,7 @@ package_whitelist:
   - ament_cmake_core
   - ros_workspace
 sync:
-  package_count: 290
+  package_count: 3
 repositories:
   keys:
   - |

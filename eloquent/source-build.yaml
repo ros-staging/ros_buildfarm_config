@@ -107,6 +107,8 @@ repositories:
   - http://repositories.ros.org/ubuntu/main
 repository_blacklist:
 - ros_workspace
+repository_whitelist:
+- ament_cmake
 targets:
   ubuntu:
     bionic:

@@ -90,5 +90,5 @@ targets:
     '7':
       x86_64:
 type: release-build
-upload_credential_id: 0ddb9953-40d3-4922-80be-298086e30370
+upload_credential_id: jenkins-agent
 version: 2

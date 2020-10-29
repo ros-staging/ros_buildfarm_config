@@ -16,20 +16,21 @@ distributions:
       overlay: eloquent/ci-overlay.yaml
     doc_builds: {}
     notification_emails:
-      - michael+build.ros2.org@openrobotics.org
-      - ros2-buildfarm-eloquent@googlegroups.com
+      - steven+build.test.ros2.org@openrobotics.org
+      - scott+build.test.ros2.org@openrobotics.org
     release_builds:
       default: eloquent/release-build.yaml
       ubhf: eloquent/release-bionic-armhf-build.yaml
       ubv8: eloquent/release-bionic-arm64-build.yaml
     source_builds:
       default: eloquent/source-build.yaml
-jenkins_url: http://build.ros2.org
+jenkins_url: http://build.test.ros2.org
 notification_emails:
-  - steven+build.ros2.org@openrobotics.org
+  - steven+build.test.ros2.org@openrobotics.org
+  - scott+build.test.ros2.org@openrobotics.org
 prerequisites:
   debian_repositories:
-  - http://repo.ros2.org/ubuntu/building
+  - http://repo.test.ros2.org/ubuntu/building
   - http://repositories.ros.org/ubuntu/main
   debian_repository_keys:
   - |
@@ -97,8 +98,8 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros-staging/rosdistro/staging/index-v4.yaml
 status_page_repositories:
   default:
-    - http://repo.ros2.org/ubuntu/building
-    - http://repo.ros2.org/ubuntu/testing
-    - http://repo.ros2.org/ubuntu/main
+    - http://repo.test.ros2.org/ubuntu/building
+    - http://repo.test.ros2.org/ubuntu/testing
+    - http://repo.test.ros2.org/ubuntu/main
 type: buildfarm
 version: 1

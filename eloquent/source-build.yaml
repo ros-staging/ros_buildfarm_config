@@ -10,12 +10,12 @@ jenkins_commit_job_priority: 58
 jenkins_job_timeout: 120
 jenkins_pull_request_job_priority: 48
 notifications:
-  committers: true
-  compiler_warnings: true
+  committers: false
+  compiler_warnings: false
   emails:
-  - michael+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-eloquent@googlegroups.com
-  maintainers: true
+  - steven+build.test.ros2.org@openrobotics.org
+  - scott+build.test.ros2.org@openrobotics.org
+  maintainers: false
 repositories:
   keys:
   - |
@@ -81,7 +81,7 @@ repositories:
     =Vgio
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/testing
+  - http://repo.test.ros2.org/ubuntu/testing
   - http://repositories.ros.org/ubuntu/main
 repository_blacklist:
 - ros_workspace

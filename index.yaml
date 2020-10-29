@@ -25,7 +25,7 @@ distributions:
 #     centos: eloquent/release-centos-build.yaml
 #   source_builds:
 #     default: eloquent/source-build.yaml
-jenkins_url: http://build.test.ros2.org
+jenkins_url: https://build.test.ros2.org
 notification_emails:
   - steven+build.test.ros2.org@openrobotics.org
   - scott+build.test.ros2.org@openrobotics.org

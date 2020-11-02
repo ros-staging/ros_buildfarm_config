@@ -19,6 +19,8 @@ package_whitelist:
   - ament_package
   - ament_cmake_core
   - ros_workspace
+  - gtest_vendor
+  - gmock_vendor
 sync:
   package_count: 3
 repositories:

@@ -1,0 +1,30 @@
+%YAML 1.1
+# ROS buildfarm doc-build file
+---
+documentation_type: make_target
+doc_repositories:
+- https://github.com/ros2/ros2_documentation.git
+install_apt_packages:
+- python3-catkin-pkg-modules
+- python3-dateutil
+- python3-yaml
+install_pip_packages:
+- sphinx
+- sphinx-tabs
+- sphinx-multiversion
+jenkins_job_priority: 80
+jenkins_job_timeout: 30
+notifications:
+  emails:
+  - clalancette@openrobotics.org
+targets:
+  ubuntu:
+    trusty:
+      amd64:
+type: doc-build
+upload_credential_id: 1e7d4696-7fd4-4bc6-8c87-ebc7b6ce16e5
+upload_host: foo
+upload_root: /tmp/foo
+upload_user: rosbot
+version: 2
+

@@ -12,7 +12,7 @@ install_pip_packages:
 - sphinx
 - sphinx-tabs
 - sphinx-multiversion
-make_target: foobar
+make_target: html
 jenkins_job_priority: 80
 jenkins_job_timeout: 30
 notifications:

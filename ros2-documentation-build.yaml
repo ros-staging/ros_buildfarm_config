@@ -5,6 +5,7 @@ documentation_type: make_target
 doc_repositories:
 - https://github.com/clalancette/ros2_documentation.git#clalancette/rolling-add-multiversion-target
 install_apt_packages:
+- git
 - python3-catkin-pkg-modules
 - python3-dateutil
 - python3-yaml

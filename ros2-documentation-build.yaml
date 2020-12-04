@@ -3,7 +3,7 @@
 ---
 documentation_type: make_target
 doc_repositories:
-- https://github.com/ros2/ros2_documentation.git
+- https://github.com/ros2/ros2_documentation.git#rolling
 install_apt_packages:
 - python3-catkin-pkg-modules
 - python3-dateutil
@@ -27,4 +27,3 @@ upload_host: foo
 upload_root: /tmp/foo
 upload_user: rosbot
 version: 2
-

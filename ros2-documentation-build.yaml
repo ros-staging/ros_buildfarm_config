@@ -11,5 +11,5 @@ notifications:
   - clalancette@openrobotics.org
 type: doc-build
 upload_credential_id: 1e7d4696-7fd4-4bc6-8c87-ebc7b6ce16e5
-upload_repository_url: foo
+upload_repository_url: git@github.com:clalancette/ros_independent_test.git
 version: 2

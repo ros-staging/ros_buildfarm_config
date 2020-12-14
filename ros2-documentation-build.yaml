@@ -7,7 +7,7 @@ documentation_type: docker_build
 doc_repositories:
   ros2_doc:
     url: https://github.com/clalancette/ros2_documentation.git
-    branch: clalancette/rolling-add-multiversion-target
+    branch: clalancette/rolling-add-dockerfile
 doc_repository_branch: clalancette/rolling-add-dockerfile
 jenkins_job_priority: 80
 jenkins_job_timeout: 30

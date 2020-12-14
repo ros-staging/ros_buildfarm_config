@@ -2,8 +2,12 @@
 # ROS buildfarm doc-build file
 ---
 documentation_type: docker_build
+#doc_repositories:
+#- https://github.com/clalancette/ros2_documentation.git
 doc_repositories:
-- https://github.com/clalancette/ros2_documentation.git
+  ros2_doc:
+    url: https://github.com/clalancette/ros2_documentation.git
+    branch: clalancette/rolling-add-multiversion-target
 doc_repository_branch: clalancette/rolling-add-dockerfile
 jenkins_job_priority: 80
 jenkins_job_timeout: 30

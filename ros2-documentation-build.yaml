@@ -16,6 +16,7 @@ notifications:
   - clalancette@openrobotics.org
 type: doc-build
 upload_credential_id: jenkins-agent
-upload_host: docs
+upload_host: repo.test.ros2.org
+upload_root: /var/repos/en
 upload_user: jenkins-agent
 version: 2

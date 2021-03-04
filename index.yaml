@@ -2,29 +2,6 @@
 # ROS buildfarm index file
 ---
 distributions:
-  eloquent:
-    ci_builds:
-      nightly-connext: eloquent/ci-nightly-connext.yaml
-      nightly-cyclonedds: eloquent/ci-nightly-cyclonedds.yaml
-      nightly-debug: eloquent/ci-nightly-debug.yaml
-      nightly-extra-rmw-release: eloquent/ci-nightly-extra-rmw-release.yaml
-      nightly-fastrtps: eloquent/ci-nightly-fastrtps.yaml
-      nightly-fastrtps-dynamic: eloquent/ci-nightly-fastrtps-dynamic.yaml
-      nightly-opensplice: eloquent/ci-nightly-opensplice.yaml
-      nightly-performance: eloquent/ci-nightly-performance.yaml
-      nightly-release: eloquent/ci-nightly-release.yaml
-      overlay: eloquent/ci-overlay.yaml
-    doc_builds: {}
-    notification_emails:
-      - steven+build.test.ros2.org@openrobotics.org
-      - scott+build.test.ros2.org@openrobotics.org
-    release_builds:
-      default: eloquent/release-build.yaml
-      #ubhf: eloquent/release-bionic-armhf-build.yaml
-      #ubv8: eloquent/release-bionic-arm64-build.yaml
-      #centos: eloquent/release-centos-build.yaml
-    source_builds:
-      default: eloquent/source-build.yaml
 doc_builds:
   ros2-documentation: ros2-documentation-build.yaml
 jenkins_url: https://build.test.ros2.org

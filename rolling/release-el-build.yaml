@@ -131,7 +131,7 @@ repositories:
     -----END PGP PUBLIC KEY BLOCK-----
     urls:
   - http://repo.test.ros2.org/el/building/$releasever/$basearch/
-target_repository: http://repo.ros2.org/el/building
+target_repository: http://repo.test.ros2.org/el/building
 targets:
   rhel:
     '7':

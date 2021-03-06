@@ -2,6 +2,12 @@
 # ROS buildfarm index file
 ---
 distributions:
+  rolling:
+    notification_emails:
+      - steven+build.test.ros2.org@openrobotics.org
+      - scott+build.test.ros2.org@openrobotics.org
+    release_builds:
+      el: rolling/release-el-build.yaml
 doc_builds:
   ros2-documentation: ros2-documentation-build.yaml
 jenkins_url: https://build.test.ros2.org

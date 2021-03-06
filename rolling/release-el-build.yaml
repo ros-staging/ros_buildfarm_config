@@ -129,7 +129,7 @@ repositories:
     Hn2+HdjGoRBTY86lZFRm5/L5OEURQ+KFclauvu2554Xs25Us2K8C+VsRcfH8Sp0=
     =/1E+
     -----END PGP PUBLIC KEY BLOCK-----
-    urls:
+  urls:
   - http://repo.test.ros2.org/el/building/$releasever/$basearch/
 target_repository: http://repo.test.ros2.org/el/building
 targets:

@@ -17,7 +17,7 @@ notifications:
 package_blacklist:
 - async_web_server_cpp  # Not yet generated for RHEL
 - autoware_auto_msgs  # Not yet generated for RHEL
-- bno055  # python3-serial has no RPM package for RHEL
+- bno055  # Not yet generated for RHEL
 - can_msgs  # Not yet generated for RHEL
 - canopen_402  # Not yet generated for RHEL
 - canopen_chain_node  # Not yet generated for RHEL
@@ -27,7 +27,7 @@ package_blacklist:
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - gazebo_dev  # Gazebo has no RPM package
 - grbl_msgs  # Not yet generated for RHEL
-- grbl_ros  # python3-serial has no RPM package for RHEL
+- grbl_ros  # Not yet generated for RHEL
 - joy_teleop  # Not yet generated for RHEL
 - key_teleop  # Not yet generated for RHEL
 - mouse_teleop  # Not yet generated for RHEL

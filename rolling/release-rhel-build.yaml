@@ -15,6 +15,7 @@ notifications:
   - scott@openrobotics.org
   maintainers: false
 package_blacklist:
+- acado_vendor  # Not yet generated for RHEL
 - async_web_server_cpp  # Not yet generated for RHEL
 - autoware_auto_msgs  # Not yet generated for RHEL
 - bno055  # Not yet generated for RHEL

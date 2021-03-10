@@ -73,10 +73,25 @@ package_blacklist:
 - webots_ros2_universal_robot  # Not yet generated for RHEL
 - webots_ros2_ur_e_description  # Not yet generated for RHEL
 package_ignore_list:
-- rmw_connext  # No RPM package for Connext
-- rmw_gurumdds  # No RPM package for GurumDDS
-- rosidl_typesupport_connext  # No RPM package for Connext
-- rosidl_typesupport_gurumdds  # No RPM package for GurumDDS
+- connext_cmake_module  # No RPM package for Connext
+- demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
+- gurumdds_cmake_module  # No RPM package for GurumDDS
+- fastrtps  # RPM for asio is not yet available for RHEL 8
+- rmw_connext_cpp  # No RPM package for Connext
+- rmw_connext_dynamic_cpp  # No RPM package for Connext
+- rmw_connext_shared_cpp  # No RPM package for Connext
+- rmw_fastrtps_cpp  # RPM for asio is not yet available for RHEL 8
+- rmw_fastrtps_dynamic_cpp  # RPM for asio is not yet available for RHEL 8
+- rmw_fastrtps_shared_cpp  # RPM for asio is not yet available for RHEL 8
+- rmw_gurumdds_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_shared_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_static_cpp  # No RPM package for GurumDDS
+- rosidl_typesupport_connext_c  # No RPM package for Connext
+- rosidl_typesupport_connext_cpp  # No RPM package for Connext
+- rosidl_typesupport_fastrtps_c  # RPM for asio is not yet available for RHEL 8
+- rosidl_typesupport_fastrtps_cpp  # RPM for asio is not yet available for RHEL 8
+- rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
+- rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
 sync:
   package_count: 262
 repositories:

@@ -37,10 +37,12 @@ package_blacklist:
 - rc_dynamics_api  # Not yet generated for RHEL
 - rc_genicam_api  # Not yet generated for RHEL
 - rc_genicam_driver  # Not yet generated for RHEL
+- rcl_logging_log4cxx  # RPM for log4cxx-devel is not yet stable
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
 - ros2trace  # Not yet generated for RHEL
 - ros_canopen  # Not yet generated for RHEL
 - rviz_assimp_vendor  # RPM for assimp is not yet stable
+- sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - serial_driver  # Not yet generated for RHEL
 - socketcan_bridge  # Not yet generated for RHEL

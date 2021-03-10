@@ -47,7 +47,6 @@ package_blacklist:
 - teleop_tools  # Not yet generated for RHEL
 - teleop_tools_msgs  # Not yet generated for RHEL
 - test_osrf_testing_tools_cpp  # Doesn't install anything
-- tracetools  # Not yet generated for RHEL
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - tracetools_launch  # Not yet generated for RHEL
 - tracetools_read  # Not yet generated for RHEL

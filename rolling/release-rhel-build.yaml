@@ -158,5 +158,5 @@ targets:
       x86_64:
 type: release-build
 upload_credential_id: pulp_admin
-upload_dest_credential_id: pulp_base_url
+upload_destination_credential_id: pulp_base_url
 version: 2

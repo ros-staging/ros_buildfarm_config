@@ -88,6 +88,7 @@ package_blacklist:
 - webots_ros2_tutorials  # Not yet generated for RHEL
 - webots_ros2_universal_robot  # Not yet generated for RHEL
 - webots_ros2_ur_e_description  # Not yet generated for RHEL
+- wiimote  # cwiid has not RPM package for RHEL
 package_ignore_list:
 - connext_cmake_module  # No RPM package for Connext
 - demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS

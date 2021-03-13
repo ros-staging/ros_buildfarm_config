@@ -45,6 +45,7 @@ package_blacklist:
 - mouse_teleop  # Not yet generated for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
 - nmea_msgs  # Requires release with bloom >= 0.10.2
+- pcl_conversions  # pcl-devel has no RPM package for RHEL 8
 - phidgets_msgs  # Requires release with bloom >= 0.10.2
 - rc_common_msgs  # Not yet generated for RHEL
 - rc_dynamics_api  # Not yet generated for RHEL

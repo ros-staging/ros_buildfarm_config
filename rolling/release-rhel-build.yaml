@@ -24,7 +24,6 @@ package_blacklist:
 - canopen_chain_node  # Not yet generated for RHEL
 - canopen_master  # Not yet generated for RHEL
 - canopen_motor_node  # Not yet generated for RHEL
-- cartographer  # RPM for ceres-solver is not yet stable
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - gazebo_dev  # Gazebo has no RPM package
 - gazebo_msgs  # Requires release with bloom >= 0.10.2

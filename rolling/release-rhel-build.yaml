@@ -26,7 +26,6 @@ package_blacklist:
 - canopen_motor_node  # Not yet generated for RHEL
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - gazebo_dev  # Gazebo has no RPM package
-- gazebo_msgs  # Requires release with bloom >= 0.10.2
 - gps_msgs  # Requires release with bloom >= 0.10.2
 - grbl_msgs  # Not yet generated for RHEL
 - grbl_ros  # Not yet generated for RHEL

@@ -1,0 +1,153 @@
+%YAML 1.1
+# ROS buildfarm source-build file
+---
+build_environment_variables:
+  NDDSHOME: /opt/rti.com/rti_connext_dds-5.3.1
+  ROS_PYTHON_VERSION: 3
+  RTI_NC_LICENSE_ACCEPTED: 'yes'
+build_tool: colcon
+jenkins_commit_job_priority: 50
+jenkins_job_timeout: 120
+jenkins_pull_request_job_priority: 40
+notifications:
+  committers: true
+  compiler_warnings: true
+  emails:
+  - steven+build.ros2.org@openrobotics.org
+  - ros2-buildfarm-rolling@googlegroups.com
+  maintainers: true
+package_whitelist:
+- rclcpp
+repositories:
+  keys:
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    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
+    =/1E+
+    -----END PGP PUBLIC KEY BLOCK-----
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Version: GnuPG v1.4.11 (GNU/Linux)
+
+    mQGiBEsy5KkRBADJbDSISoamRM5AA20bfAeBuhhaI+VaiCVcxw90sq9AI5lIc42F
+    WzM2acm8yplqWiehAqOLKd+iIrqNGZ+VavZEPTx7o06UZUMRoPBiTFaCwrQ5avKz
+    lt7ij8PRMVWNrJ7A2lDYXfFQVV1o3Xo06qVnv0KLLUmiur0LBu4H/oTH3wCgt+/I
+    D3LUKaMJsc77KwFBTjHB0EsD/26Z2Ud12f3urSNyN6VMWnP3rz6xsmtY4Qsmkbnr
+    JuduxCQBZv6bX1Cr2ulXkv0fFOr+s5OyUv7zyCPbxiJFh3Br7fJGb0b5/M208KPe
+    giITY9hMh/aUbKjXCPoOXPxSL6SWOWV8taR6903EFyLBN0qno/kXIBKnVqBZobgn
+    jIEPA/0fTnxtZtE7EpirGQMF2caJfv7/LCgXmRs9xAhgbE0/caoa1tnc79uaHmLZ
+    FtbGFoAO31YNYM/IUHtmabbGdvZ4oYUwDhjBevVvC7aI+XhuNGK5mU8qCLLSEUOl
+    CUr6BJq/0iFmjwjmwk9idZEYhqSNy2OoYJbq45rbHfbdKLEVrbQeUk9TIEJ1aWxk
+    ZXIgPHJvc2J1aWxkQHJvcy5vcmc+iGAEExECACAFAksy5KkCGwMGCwkIBwMCBBUC
+    CAMEFgIDAQIeAQIXgAAKCRBVI7rusB+hFmk7AJ0XsLp05KA8l3YzAumZfjSN04MZ
+    jQCfQHfp4aQUXdOCUtetVo0QZUX3IuO5Ag0ESzLkrhAIAOCuSC83VXYWf8gOMSzd
+    xwpsH/uLV9Wze2LGnajsJLjEOhcsz2BHfxqNXhYaE9aQaodPCpbUAkPq8tLbpXy0
+    SWRCx0F5RcplXx5vIWbP6TlfPbRpK70w7IWd6vsNrjwEHjlhOLcNcj42sp5pgx4b
+    dceK06k5Ml2hYovPnD9o2TYgjOqg5FHZ2g1J0103n/66bN/hZnpLaZJYQiPWCyq6
+    K0565i1k2Y7hgWB/OXqwaqCehqmLTvpyQGzE1UJvKLuYU+T+4hBnSPbT3KIi5fCz
+    lIwvxijOMcfbkLhzYQXcU0Rd1VItcd5nmPL4z97jBxzuhkgxXpGR4WGKhvsA2Z9Y
+    UtsAAwYH/3Bf44bTpD9bVADUdab3e7zm8iHfh9K/a83mIgDB7mHV6WuemQVTf/1d
+    eu4mI5WtpbOCoucybGfjGIIAcSxwIx6VfC7HSp4J51bOpHhbdDffUEk6QVsZjwoF
+    yn3W9W3ZVeTI+ch/Qoo5a98SnmdjN8eXI/qCuiXOHc6rXDXc2R0iox/1EAS8xGVd
+    cYZe7IWBO2CjCknyhLrWxZHoy+i1GCZ9KvPF/Ef2dmLhCydT73ZlumsY8N5vm76Q
+    ul1G7f8LNbnMgXQafRkPffrAXSVhGY3Z2IiBwFNgxcKTq479l7yedYRGeU1A+SYI
+    YmRFWHXt3rTkMlQSpxCsB0fAYfrwEqqISQQYEQIACQUCSzLkrgIbDAAKCRBVI7ru
+    sB+hFpryAJ4puo6cMZxa6wITHFAM/k84+aRijwCeItuWpUngP25xDuDGMsKarcNi
+    qYE=
+    =Vgio
+    -----END PGP PUBLIC KEY BLOCK-----
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Version: GnuPG v1.4.11 (GNU/Linux)
+
+    mQGiBEsy5KkRBADJbDSISoamRM5AA20bfAeBuhhaI+VaiCVcxw90sq9AI5lIc42F
+    WzM2acm8yplqWiehAqOLKd+iIrqNGZ+VavZEPTx7o06UZUMRoPBiTFaCwrQ5avKz
+    lt7ij8PRMVWNrJ7A2lDYXfFQVV1o3Xo06qVnv0KLLUmiur0LBu4H/oTH3wCgt+/I
+    D3LUKaMJsc77KwFBTjHB0EsD/26Z2Ud12f3urSNyN6VMWnP3rz6xsmtY4Qsmkbnr
+    JuduxCQBZv6bX1Cr2ulXkv0fFOr+s5OyUv7zyCPbxiJFh3Br7fJGb0b5/M208KPe
+    giITY9hMh/aUbKjXCPoOXPxSL6SWOWV8taR6903EFyLBN0qno/kXIBKnVqBZobgn
+    jIEPA/0fTnxtZtE7EpirGQMF2caJfv7/LCgXmRs9xAhgbE0/caoa1tnc79uaHmLZ
+    FtbGFoAO31YNYM/IUHtmabbGdvZ4oYUwDhjBevVvC7aI+XhuNGK5mU8qCLLSEUOl
+    CUr6BJq/0iFmjwjmwk9idZEYhqSNy2OoYJbq45rbHfbdKLEVrbQeUk9TIEJ1aWxk
+    ZXIgPHJvc2J1aWxkQHJvcy5vcmc+iGAEExECACAFAksy5KkCGwMGCwkIBwMCBBUC
+    CAMEFgIDAQIeAQIXgAAKCRBVI7rusB+hFmk7AJ0XsLp05KA8l3YzAumZfjSN04MZ
+    jQCfQHfp4aQUXdOCUtetVo0QZUX3IuO5Ag0ESzLkrhAIAOCuSC83VXYWf8gOMSzd
+    xwpsH/uLV9Wze2LGnajsJLjEOhcsz2BHfxqNXhYaE9aQaodPCpbUAkPq8tLbpXy0
+    SWRCx0F5RcplXx5vIWbP6TlfPbRpK70w7IWd6vsNrjwEHjlhOLcNcj42sp5pgx4b
+    dceK06k5Ml2hYovPnD9o2TYgjOqg5FHZ2g1J0103n/66bN/hZnpLaZJYQiPWCyq6
+    K0565i1k2Y7hgWB/OXqwaqCehqmLTvpyQGzE1UJvKLuYU+T+4hBnSPbT3KIi5fCz
+    lIwvxijOMcfbkLhzYQXcU0Rd1VItcd5nmPL4z97jBxzuhkgxXpGR4WGKhvsA2Z9Y
+    UtsAAwYH/3Bf44bTpD9bVADUdab3e7zm8iHfh9K/a83mIgDB7mHV6WuemQVTf/1d
+    eu4mI5WtpbOCoucybGfjGIIAcSxwIx6VfC7HSp4J51bOpHhbdDffUEk6QVsZjwoF
+    yn3W9W3ZVeTI+ch/Qoo5a98SnmdjN8eXI/qCuiXOHc6rXDXc2R0iox/1EAS8xGVd
+    cYZe7IWBO2CjCknyhLrWxZHoy+i1GCZ9KvPF/Ef2dmLhCydT73ZlumsY8N5vm76Q
+    ul1G7f8LNbnMgXQafRkPffrAXSVhGY3Z2IiBwFNgxcKTq479l7yedYRGeU1A+SYI
+    YmRFWHXt3rTkMlQSpxCsB0fAYfrwEqqISQQYEQIACQUCSzLkrgIbDAAKCRBVI7ru
+    sB+hFpryAJ4puo6cMZxa6wITHFAM/k84+aRijwCeItuWpUngP25xDuDGMsKarcNi
+    qYE=
+    =Vgio
+    -----END PGP PUBLIC KEY BLOCK-----
+  urls:
+  - http://repo.test.ros2.org/ubuntu/testing
+  - http://repo.ros2.org/ubuntu/testing
+  - http://repositories.ros.org/ubuntu/testing
+repository_blacklist:
+- ros_workspace
+targets:
+  ubuntu:
+    focal:
+      amd64:
+test_commits:
+  default: true
+test_pull_requests:
+  default: false
+type: source-build
+version: 2

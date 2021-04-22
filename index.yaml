@@ -10,6 +10,8 @@ distributions:
       - scott+build.test.ros2.org@openrobotics.org
     release_builds:
       rhel: rolling/release-rhel-build.yaml
+    source_builds:
+      default: rolling/source-build.yaml
 doc_builds:
   ros2-documentation: ros2-documentation-build.yaml
 jenkins_url: https://build.test.ros2.org

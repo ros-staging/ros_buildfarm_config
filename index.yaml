@@ -3,7 +3,7 @@
 ---
 distributions:
   rolling:
-    doc_builds:
+    doc_builds: {}
       #default: rolling/doc-build.yaml
     notification_emails:
       - steven+build.test.ros2.org@openrobotics.org

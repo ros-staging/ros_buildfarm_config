@@ -3,6 +3,8 @@
 ---
 distributions:
   rolling:
+    ci_builds:
+      nightly_debug: rolling/ci-nightly-debug.yaml
     doc_builds: {}
       #default: rolling/doc-build.yaml
     notification_emails:

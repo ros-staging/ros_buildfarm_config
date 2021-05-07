@@ -11,7 +11,7 @@ notifications:
   committers: false
   emails:
   - clalancette+buildfarm@osrfoundation.org
-  maintainers: false
+  maintainers: true
 repositories:
   keys:
   - |

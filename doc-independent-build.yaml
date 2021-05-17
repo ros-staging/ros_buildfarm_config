@@ -25,6 +25,10 @@ notifications:
   emails:
   - ros-buildfarm@googlegroups.com
   - tfoote+buildfarm@osrfoundation.org
+targets:
+  ubuntu:
+    pretend:
+      amd64:
 type: doc-build
 upload_credential_id: jenkins-agent
 upload_host: docs

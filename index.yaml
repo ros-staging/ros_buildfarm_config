@@ -2,6 +2,9 @@
 # ROS buildfarm index file
 ---
 distributions:
+  dashing:
+    release_builds:
+      default: dashing/release-build-addon.yaml
   rolling:
     ci_builds:
       nightly_debug: rolling/ci-nightly-debug.yaml

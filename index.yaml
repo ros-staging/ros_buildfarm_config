@@ -8,6 +8,7 @@ distributions:
   rolling:
     ci_builds:
       nightly_debug: rolling/ci-nightly-debug.yaml
+      clang_tidy: rollling/ci-clang-tidy.yaml
     doc_builds:
       default: rolling/doc-build.yaml
     notification_emails:

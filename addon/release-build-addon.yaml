@@ -1,43 +1,24 @@
 %YAML 1.1
-# ROS buildfarm index file
+# ROS buildfarm release-build file
 ---
-distributions:
-  addon:
-    release_builds:
-      default: addon/release-build-addon.yaml
-  dashing:
-    release_builds:
-      default: dashing/release-build-addon.yaml
-  rolling:
-    ci_builds:
-      nightly_debug: rolling/ci-nightly-debug.yaml
-      clang_tidy: rolling/ci-clang-tidy.yaml
-    doc_builds:
-      default: rolling/doc-build.yaml
-    notification_emails:
-      - steven+build.test.ros2.org@openrobotics.org
-      - scott+build.test.ros2.org@openrobotics.org
-    release_builds:
-      default: rolling/release-build.yaml
-      rhel: rolling/release-rhel-build.yaml
-    source_builds:
-      default: rolling/source-build.yaml
-  melodic:
-    doc_builds:
-      default: melodic/doc-build.yaml
-doc_builds:
-  ros2-documentation: ros2-documentation-build.yaml
-  rosindex: doc-rosindex.yaml
-  independent: doc-independent-build.yaml
-jenkins_url: https://build.test.ros2.org
-notification_emails:
-  - steven+build.test.ros2.org@openrobotics.org
-  - scott+build.test.ros2.org@openrobotics.org
-prerequisites:
-  debian_repositories:
-  - http://repo.test.ros2.org/ubuntu/building
-  - http://repositories.ros.org/ubuntu/main
-  debian_repository_keys:
+abi_incompatibility_assumed: true
+
+build_environment_variables:
+  RTI_NC_LICENSE_ACCEPTED: 'yes'
+
+jenkins_binary_job_priority: 89
+jenkins_binary_job_timeout: 120
+jenkins_source_job_priority: 79
+jenkins_source_job_timeout: 30
+notifications:
+  emails:
+  - steven+build.ros2.org@openrobotics.org
+  maintainers: false
+sync:
+  package_count: 500
+tag_whitelist: [addon]
+repositories:
+  keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -122,15 +103,14 @@ prerequisites:
     WE+F5FaIKwb72PL4rLi4
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/ros-staging/rosdistro/staging/index-v4.yaml
-status_page_repositories:
-  default:
-    - http://repo.test.ros2.org/ubuntu/building
-    - http://repo.test.ros2.org/ubuntu/testing
-    - http://repo.test.ros2.org/ubuntu/main
-  rhel:
-    - http://repo.test.ros2.org/rhel/building
-    - http://repo.test.ros2.org/rhel/testing
-    - http://repo.test.ros2.org/rhel/main
-type: buildfarm
-version: 1
+  urls:
+  - http://repo.test.ros2.org/ubuntu/building
+  - http://repositories.ros.org/ubuntu/main
+target_repository: http://repo.test.ros2.org/ubuntu/building
+targets:
+  ubuntu:
+    bionic:
+      amd64:
+type: release-build
+upload_credential_id: jenkins-agent
+version: 2

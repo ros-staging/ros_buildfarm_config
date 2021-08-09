@@ -32,6 +32,6 @@ targets:
 type: doc-build
 upload_credential_id: jenkins-agent
 upload_host: repo.test.ros2.org
-upload_root: docs
+upload_root: /var/repos/docs
 upload_user: jenkins-agent
 version: 2

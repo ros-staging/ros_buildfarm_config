@@ -19,6 +19,7 @@ install_apt_packages:
 - python3-sphinx-rtd-theme
 install_pip_packages:
 - catkin-sphinx
+- xmlschema
 jenkins_job_priority: 80
 jenkins_job_timeout: 30
 notifications:

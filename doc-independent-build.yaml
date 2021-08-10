@@ -3,9 +3,13 @@
 ---
 documentation_type: make_target
 doc_repositories:
-  catkin_pkg:
-    url: https://github.com/ros-infrastructure/catkin_pkg.git
-    branch: use-rtd-theme
+- https://github.com/ros-infrastructure/catkin_pkg.git
+- https://github.com/ros-infrastructure/rep.git
+- https://github.com/ros-infrastructure/rosdep.git
+- https://github.com/ros-infrastructure/rosdistro.git
+- https://github.com/ros-infrastructure/rospkg.git
+- https://github.com/vcstools/rosinstall.git
+- https://github.com/vcstools/vcstools.git
 install_apt_packages:
 - python3-catkin-pkg-modules
 - python3-dateutil

@@ -16,6 +16,10 @@ jenkins_job_schedule: H H * * 0
 jenkins_job_timeout: 300
 jenkins_job_weight: 4
 package_selection_args: '--packages-ignore image_tools'
+install_packages:
+- clang-9
+- llvm-9
+- llvm-9-tools
 repos_files:
 - https://github.com/ros2/ros2/raw/spaceros/ros2.repos
 repositories:

@@ -14,6 +14,7 @@ distributions:
       clang_tidy: rolling/ci-clang-tidy.yaml
       ikos-underlay: rolling/ci-ikos-underlay.yaml
       ikos: rolling/ci-ikos.yaml
+      spaceros: rolling/ci-spaceros.yaml
     doc_builds:
       default: rolling/doc-build.yaml
     notification_emails:

@@ -85,6 +85,7 @@ skip_rosdep_keys:
   - rmw_connextdds
   - rmw_fastrtps_cpp
   - rmw_fastrtps_dynamic_cpp
+  - ros_testing
   - rosidl_typesupport_fastrtps_c
 targets:
   ubuntu:

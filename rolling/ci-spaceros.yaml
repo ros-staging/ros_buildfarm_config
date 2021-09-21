@@ -84,6 +84,7 @@ repositories:
 skip_rosdep_keys:
   - composition
   - demo_nodes_py
+  - ikos
   - lifecycle
   - rmw_connextdds
   - rmw_fastrtps_cpp

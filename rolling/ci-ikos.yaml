@@ -18,6 +18,7 @@ jenkins_job_weight: 4
 package_selection_args: '--packages-ignore image_tools'
 install_packages:
 - clang-9
+- libboost-filesystem-dev
 - llvm-9
 - llvm-9-tools
 repos_files:

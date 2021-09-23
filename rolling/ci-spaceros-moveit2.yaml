@@ -13,7 +13,7 @@ jenkins_job_timeout: 300
 jenkins_job_weight: 4
 package_selection_args: ''
 repos_files:
-- https://github.com/ros2/ros2/raw/nuclearsandwich/spaceros/moveit2/moveit2_dependencies.repos
+- https://github.com/ros2/ros2/raw/nuclearsandwich/spaceros/moveit2/moveit2.repos
 - https://github.com/ros-planning/moveit2/raw/main/moveit2.repos
 - https://github.com/ros-planning/moveit2/raw/main/moveit2_galactic.repos
 repositories:

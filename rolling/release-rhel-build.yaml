@@ -126,5 +126,6 @@ targets:
       x86_64:
 type: release-build
 upload_credential_id: pulp_admin
+upload_credential_id_cra: jenkins-agent
 upload_destination_credential_id: pulp_base_url
 version: 2

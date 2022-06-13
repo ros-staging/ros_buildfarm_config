@@ -22,7 +22,6 @@ distributions:
       - steven+build.test.ros2.org@openrobotics.org
       - scott+build.test.ros2.org@openrobotics.org
     release_builds:
-      default: rolling/release-build.yaml
       rhel: rolling/release-rhel-build.yaml
     source_builds:
       default: rolling/source-build.yaml
@@ -126,7 +125,7 @@ prerequisites:
     WE+F5FaIKwb72PL4rLi4
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/ros-staging/rosdistro/staging/index-v4.yaml
+rosdistro_index_url: https://raw.githubusercontent.com/ros-staging/rosdistro/master/index-v4.yaml
 status_page_repositories:
   default:
     - http://repo.test.ros2.org/ubuntu/building

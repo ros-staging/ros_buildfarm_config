@@ -12,98 +12,76 @@ jenkins_source_job_priority: 70
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - scott@openrobotics.org
+  - scott+build.test.ros2.org@openrobotics.org
   maintainers: false
-package_blacklist:
-- acado_vendor  # Not yet generated for RHEL
-- async_web_server_cpp  # Not yet generated for RHEL
-- autoware_auto_msgs  # Not yet generated for RHEL
-- bno055  # Not yet generated for RHEL
-- can_msgs  # Not yet generated for RHEL
-- canopen_402  # Not yet generated for RHEL
-- canopen_chain_node  # Not yet generated for RHEL
-- canopen_master  # Not yet generated for RHEL
-- canopen_motor_node  # Not yet generated for RHEL
-- cartographer  # RPM for ceres-solver is not yet stable
-- control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
-- gazebo_dev  # Gazebo has no RPM package
-- gps_msgs  # Requires release with bloom >= 0.10.2
-- grbl_msgs  # Not yet generated for RHEL
-- grbl_ros  # Not yet generated for RHEL
-- ifm3d_core  # pcl-devel has no RPM package for RHEL 8
-- joy_teleop  # Not yet generated for RHEL
-- key_teleop  # Not yet generated for RHEL
-- lgsvl_msgs  # Requires release with bloom >= 0.10.2
-- marti_can_msgs  # Requires release with bloom >= 0.10.2
-- marti_common_msgs  # Requires release with bloom >= 0.10.2
-- marti_dbw_msgs  # Requires release with bloom >= 0.10.2
-- marti_perception_msgs  # Requires release with bloom >= 0.10.2
-- marti_sensor_msgs  # Requires release with bloom >= 0.10.2
-- marti_status_msgs  # Requires release with bloom >= 0.10.2
-- marti_visualization_msgs  # Requires release with bloom >= 0.10.2
-- mouse_teleop  # Not yet generated for RHEL
-- mrpt2  # ffmpeg has no RPM package in supported repositories
-- nmea_msgs  # Requires release with bloom >= 0.10.2
-- pcl_conversions  # pcl-devel has no RPM package for RHEL 8
-- phidgets_msgs  # Requires release with bloom >= 0.10.2
-- rc_common_msgs  # Not yet generated for RHEL
-- rc_dynamics_api  # Not yet generated for RHEL
-- rc_genicam_api  # Not yet generated for RHEL
-- rc_genicam_driver  # Not yet generated for RHEL
-- ros1_bridge  # ROS Noetic has no RPM packages for RHEL
-- ros2trace  # Not yet generated for RHEL
-- ros_canopen  # Not yet generated for RHEL
-- sdformat_test_files  # sdformat has no RPM packages for RHEL 8
-- sdformat_urdf  # sdformat has no RPM packages for RHEL 8
-- serial_driver  # Not yet generated for RHEL
-- socketcan_bridge  # Not yet generated for RHEL
-- socketcan_interface  # Not yet generated for RHEL
-- teleop_tools  # Not yet generated for RHEL
-- teleop_tools_msgs  # Not yet generated for RHEL
-- test_osrf_testing_tools_cpp  # Doesn't install anything
-- tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
-- tracetools_launch  # Not yet generated for RHEL
-- tracetools_read  # Not yet generated for RHEL
-- tracetools_test  # Not yet generated for RHEL
-- tracetools_trace  # Not yet generated for RHEL
-- ublox  # Not yet generated for RHEL
-- ublox_gps  # Not yet generated for RHEL
-- ublox_msgs  # Not yet generated for RHEL
-- ublox_serialization  # Not yet generated for RHEL
-- udp_driver  # Not yet generated for RHEL
-- udp_msgs  # Not yet generated for RHEL
-- webots_ros2  # Not yet generated for RHEL
-- webots_ros2_abb  # Not yet generated for RHEL
-- webots_ros2_core  # Not yet generated for RHEL
-- webots_ros2_demos  # Not yet generated for RHEL
-- webots_ros2_epuck  # Not yet generated for RHEL
-- webots_ros2_examples  # Not yet generated for RHEL
-- webots_ros2_importer  # Not yet generated for RHEL
-- webots_ros2_msgs  # Not yet generated for RHEL
-- webots_ros2_tiago  # Not yet generated for RHEL
-- webots_ros2_turtlebot  # Not yet generated for RHEL
-- webots_ros2_tutorials  # Not yet generated for RHEL
-- webots_ros2_universal_robot  # Not yet generated for RHEL
-- webots_ros2_ur_e_description  # Not yet generated for RHEL
-- wiimote  # cwiid has not RPM package for RHEL
-package_ignore_list:
-- connext_cmake_module  # No RPM package for Connext
-- demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
-- gurumdds_cmake_module  # No RPM package for GurumDDS
-- rmw_connext_cpp  # No RPM package for Connext
-- rmw_connext_dynamic_cpp  # No RPM package for Connext
-- rmw_connext_shared_cpp  # No RPM package for Connext
-- rmw_connextdds  # No RPM package for Connext
-- rmw_connextddsmicro  # No RPM package for Connext
-- rmw_connextdds_common  # No RPM package for Connext
-- rmw_gurumdds_cpp  # No RPM package for GurumDDS
-- rmw_gurumdds_shared_cpp  # No RPM package for GurumDDS
-- rmw_gurumdds_static_cpp  # No RPM package for GurumDDS
-- rosidl_typesupport_connext_c  # No RPM package for Connext
-- rosidl_typesupport_connext_cpp  # No RPM package for Connext
-- rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
-- rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
-- rti_connext_dds_cmake_module  # No RPM package for Connext
+package_whitelist:
+- ament_package
+
+- google_benchmark_vendor
+- gtest_vendor
+- gmock_vendor
+
+- ament_cmake
+- ament_cmake_auto
+- ament_cmake_core
+- ament_cmake_export_definitions
+- ament_cmake_export_dependencies
+- ament_cmake_export_include_directories
+- ament_cmake_export_interfaces
+- ament_cmake_export_libraries
+- ament_cmake_export_link_flags
+- ament_cmake_export_targets
+- ament_cmake_gen_version_h
+- ament_cmake_gmock
+- ament_cmake_google_benchmark
+- ament_cmake_gtest
+- ament_cmake_include_directories
+- ament_cmake_libraries
+- ament_cmake_nose
+- ament_cmake_pytest
+- ament_cmake_python
+- ament_cmake_target_dependencies
+- ament_cmake_test
+- ament_cmake_version
+
+- uncrustify_vendor
+- ament_index_cpp
+- ament_index_python
+
+- ament_clang_format
+- ament_clang_tidy
+- ament_cmake_clang_format
+- ament_cmake_clang_tidy
+- ament_cmake_copyright
+- ament_cmake_cppcheck
+- ament_cmake_cpplint
+- ament_cmake_flake8
+- ament_cmake_lint_cmake
+- ament_cmake_mypy
+- ament_cmake_pclint
+- ament_cmake_pep257
+- ament_cmake_pycodestyle
+- ament_cmake_pyflakes
+- ament_cmake_uncrustify
+- ament_cmake_xmllint
+- ament_copyright
+- ament_cppcheck
+- ament_cpplint
+- ament_flake8
+- ament_lint
+- ament_lint_auto
+- ament_lint_cmake
+- ament_lint_common
+- ament_mypy
+- ament_pclint
+- ament_pep257
+- ament_pycodestyle
+- ament_pyflakes
+- ament_uncrustify
+- ament_xmllint
+
+- ros_workspace
+skip_ignored_packages: true
 sync:
   package_count: 262
 repositories:

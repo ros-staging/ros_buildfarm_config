@@ -83,7 +83,7 @@ package_whitelist:
 - ros_workspace
 skip_ignored_packages: true
 sync:
-  package_count: 262
+  package_count: 10
 repositories:
   keys:
   - |

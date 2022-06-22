@@ -81,6 +81,21 @@ package_whitelist:
 - ament_xmllint
 
 - ros_workspace
+
+- domain_coordinator
+- ament_cmake_ros
+- ament_index
+- mimick_vendor
+- osrf_pycommon
+- osrf_testing_tools_cpp
+- launch
+- launch_testing
+- launch_testing_ament_cmake
+- launch_xml
+- launch_yaml
+- performance_test_fixture
+- python_cmake_module
+- rcutils
 skip_ignored_packages: true
 sync:
   package_count: 10

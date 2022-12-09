@@ -21,6 +21,8 @@ distributions:
     notification_emails:
       - steven+build.test.ros2.org@openrobotics.org
       - scott+build.test.ros2.org@openrobotics.org
+    release_builds:
+      default: rolling/release-build.yaml
     source_builds:
       default: rolling/source-build.yaml
   melodic:

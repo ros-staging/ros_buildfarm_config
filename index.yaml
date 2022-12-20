@@ -8,6 +8,9 @@ distributions:
   dashing:
     release_builds:
       default: dashing/release-build-addon.yaml
+  humble:
+    release_builds:
+      default: humble/release-build.yaml
   rolling:
     ci_builds:
       nightly_debug: rolling/ci-nightly-debug.yaml

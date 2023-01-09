@@ -18,6 +18,8 @@ package_blacklist:
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_roscpp  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
+package_dependency_behavior:
+  run_package_tests: False
 sync:
   package_count: 499
   packages: [desktop]

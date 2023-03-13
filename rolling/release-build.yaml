@@ -14,6 +14,7 @@ notifications:
   emails:
   - steven+build.test.ros2.org@openrobotics.org
   - scott+build.test.ros2.org@openrobotics.org
+  maintainers: false
 package_blacklist:
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665

@@ -1,0 +1,113 @@
+%YAML 1.1
+# ROS buildfarm release-build file
+---
+abi_incompatibility_assumed: true
+
+build_environment_variables:
+  RPM_BUILD_NCPUS: '1'
+
+jenkins_binary_job_priority: 80
+jenkins_binary_job_timeout: 120
+jenkins_source_job_priority: 70
+jenkins_source_job_timeout: 30
+notifications:
+  emails:
+  - scott+build.test.ros2.org@openrobotics.org
+  maintainers: false
+package_blacklist:
+- control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
+- gazebo_dev  # Gazebo has no RPM package
+- ign_ros2_control  # ignition has no RPM packages for RHEL
+- ign_rviz_common  # ignition has no RPM packages for RHEL
+- moveit_common  # libogre-dev has no RPM package for RHEL
+- moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
+- mrpt2  # ffmpeg has no RPM package in supported repositories
+- ompl  # opende has no RPM package for RHEL
+- open3d_conversions  # open3d has no RPM package for RHEL
+- rmf_building_map_tools  # ignition has no RPM packages for RHEL
+- rmf_building_sim_common  # ignition has no RPM packages for RHEL
+- rmf_demos_assets  # ignition has no RPM packages for RHEL
+- rmf_demos_dashboard_resources  # ignition has no RPM packages for RHEL
+- rmf_demos_maps  # ignition has no RPM packages for RHEL
+- rmf_demos_panel  # ignition has no RPM packages for RHEL
+- rmf_demos_tasks  # ignition has no RPM packages for RHEL
+- rmf_robot_sim_common  # ignition has no RPM packages for RHEL
+- rmf_traffic_editor  # ignition has no RPM packages for RHEL
+- rmf_traffic_editor_assets  # ignition has no RPM packages for RHEL
+- ros_ign_bridge  # ignition has no RPM packages for RHEL
+- ros_ign_gazebo  # ignition has no RPM packages for RHEL
+- ros_ign_interfaces  # ignition has no RPM packages for RHEL
+- ros1_bridge  # ROS Noetic has no RPM packages for RHEL
+- sdformat_test_files  # sdformat has no RPM packages for RHEL 9
+- sdformat_urdf  # sdformat has no RPM packages for RHEL 9
+- tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
+- usb_cam  # ffmpeg has no RPM package for RHEL
+- warehouse_ros_mongo  # mongodb has no RPM package for RHEL
+- wiimote  # cwiid has no RPM package for RHEL
+package_ignore_list:
+- connext_cmake_module  # No RPM package for Connext
+- demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
+- gurumdds_cmake_module  # No RPM package for GurumDDS
+- rmw_connext_cpp  # No RPM package for Connext
+- rmw_connext_dynamic_cpp  # No RPM package for Connext
+- rmw_connext_shared_cpp  # No RPM package for Connext
+- rmw_connextdds  # No RPM package for Connext
+- rmw_connextddsmicro  # No RPM package for Connext
+- rmw_connextdds_common  # No RPM package for Connext
+- rmw_gurumdds_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_shared_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_static_cpp  # No RPM package for GurumDDS
+- rosidl_typesupport_connext_c  # No RPM package for Connext
+- rosidl_typesupport_connext_cpp  # No RPM package for Connext
+- rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
+- rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
+- rti_connext_dds_cmake_module  # No RPM package for Connext
+sync:
+  package_count: 400
+  packages: [desktop]
+repositories:
+  keys:
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mQINBGJOBmMBEADBYm9m9TaNLQeQNT/t4L/iNiTtlsgWiEO2X8Udyjw9pD2bENK3
+    qu1QSPqO0OMBXBbV9TKzJDMDHa+yQaYTcIOMncJg/8vL8x12KF/eOg51TyhZshRQ
+    923PpfXK8pDECo03P7CPZtBrk1HKoDrtVNe71VIMpBOR0ebTGdchROs8rDXTCuCu
+    SC5W8Bn9hz3HYf6IhzCVr2pCujWDsBwjNzNDwIzNCGjOUSezlERAgQrSD58wf95z
+    KTwpZ4O6CPZcxtVOC+IN9oR2JnwuRKsGfCprWFFs3YVxBvPnP+IGbKi/tnmuDXcP
+    W7f3Cyz7qZMDY0JrrewFIiFhJ2pZ5OJx+fTp/3K1RXRBfcV7Hjrx4V6+jzprNJjd
+    OSmU+gdTD7KKcEt3aS8worzmWLSokZO7uROjdej8pK1nWMMrceVQNp32+JftvcHF
+    JeUHBvm6Qa7r62o0H1wWysIHu0otbIkErQ/jFwnvlwElC4kjc+ejCpFb3/VyuPBc
+    /9PhnMGEKbBXJlGb5pu/K2Xn7r71xG257HFyw2WrS9s3tiFFuiDFbihEeW/E21jP
+    1FuGBJIfFMpeIVga8U3rvo7+q9OonkJJrZ7lZwoYhiedOAQJhxFRkiN+DDc12sXx
+    6+2cirJe59T+izTE8xR438MVOiWwM3HHBq/eyyCgQLuqyMRwkc4l/sq+7QARAQAB
+    tEdST1MgQnVpbGRmYXJtIFNUQUdJTkcgKFJPUyBCdWlsZGZhcm0gU1RBR0lORykg
+    PHN0ZXZlbkBvcGVucm9ib3RpY3Mub3JnPokCWAQTAQgAQhYhBAbIg7AUq8DskeX9
+    paNAfOsvbHd2BQJiTgZjAhsDBQkDwmcABQsJCAcCAyICAQYVCgkICwIEFgIDAQIe
+    BwIXgAAKCRCjQHzrL2x3drYjEAC+MwxXTPs8TlOMWRrzhBp1gdojN7KLLT5a0NCa
+    1O8AnUfXJqL9L0U3bFtTMlByuGdhPk7w5cDjULBsP12ucN9pIlRYzmqdRz7qOeVh
+    IE6EzyV3LhnxPeJ21VPRJwHFu3WDPEBAKmE00LHBc6dACSGZ+d9FJj+jafiVg41H
+    QecEwWmZxh36/2R3PBQVJ6ZqTJSMVw+qEtkIyrGGbkqsT1mRJ4u8WqqsR7XWtFHT
+    wC7tlY+BdZvi96Fo2tA21GhvAS3p+nNkd/ENCkdd3LNihnpU10+Qh9zYOw2RNcPy
+    HqcRod4RVX7sF1Xb1L8WJ0GtYQj+UB54CEXnK+JUlub3tMNWTnJ3NRpEf4FEAElK
+    BunqJsXE5Rda03W5oTk/FxCpqV8iFozVSJ5xWyWMAf9aJDDd6o1dvrJthEDxIrsR
+    1HivnL5JGYjNGJJlZ0rRZD924L9AKEihIjU5EexO3/vummKM/BvgG0zRXkvpj97u
+    rKr/a31DHH91xqchK052gXi3uTBCDRnD5hyVdsmbyilafYI04pb9qqDzemnQOtz7
+    kOfOCoSqQsiBF7Hm4hY19RWPA+/Ots42Wh+obMdQqbTk0m76L6mpG1hFtdB8Uvek
+    jn3hzZ5mkQyiv/0znHjDmb23pPucHZMyNrmUjH4RHMRnitpgY7++wx3YtJ2gmheX
+    B5JkMg==
+    =H5Nx
+    -----END PGP PUBLIC KEY BLOCK-----
+  urls:
+  - http://repo.test.ros2.org/rhel/building/$releasever/$basearch/
+target_repository: http://repo.test.ros2.org/rhel/building
+targets:
+  rhel:
+    '9':
+      x86_64:
+type: release-build
+upload_credential_id: jenkins-agent
+upload_credential_id_pulp: pulp_admin
+upload_destination_credential_id: pulp_base_url
+upload_host: repo.ros2.org
+version: 2

@@ -15,6 +15,7 @@ notifications:
   - scott+build.test.ros2.org@openrobotics.org
   maintainers: false
 package_blacklist:
+- ament_cmake_nose  # python3-nose has no RPM for RHEL 9
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
 - gazebo_dev  # Gazebo has no RPM package
 - ign_ros2_control  # ignition has no RPM packages for RHEL

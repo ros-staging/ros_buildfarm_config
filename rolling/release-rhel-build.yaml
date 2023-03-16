@@ -64,6 +64,8 @@ package_ignore_list:
 - rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
 - rqt_plot  # python3-matplotlib has no RPM for RHEL 9
 - rti_connext_dds_cmake_module  # No RPM package for Connext
+package_dependency_behavior:
+  run_package_tests: False
 sync:
   package_count: 400
   packages: [desktop]

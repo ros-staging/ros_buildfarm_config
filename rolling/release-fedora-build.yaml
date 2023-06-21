@@ -4,6 +4,7 @@
 abi_incompatibility_assumed: true
 
 build_environment_variables:
+  QA_RPATHS: '0'
   RPM_BUILD_NCPUS: '1'
 
 jenkins_binary_job_priority: 80

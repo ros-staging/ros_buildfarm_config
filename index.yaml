@@ -30,9 +30,9 @@ distributions:
       rhel: rolling/release-rhel-build.yaml
     source_builds:
       default: rolling/source-build.yaml
-  melodic:
+  noetic:
     doc_builds:
-      default: melodic/doc-build.yaml
+      default: noetic/doc-build.yaml
 doc_builds:
   ros2-documentation: ros2-documentation-build.yaml
   rosindex: doc-rosindex.yaml
@@ -108,7 +108,8 @@ prerequisites:
     WE+F5FaIKwb72PL4rLi4
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/ros-staging/rosdistro/staging2/index-v4.yaml
+rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml
+#rosdistro_index_url: https://raw.githubusercontent.com/ros-staging/rosdistro/staging2/index-v4.yaml
 status_page_repositories:
   default:
     - http://repo.test.ros2.org/ubuntu/building

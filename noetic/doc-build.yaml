@@ -12,8 +12,6 @@ notifications:
   emails:
   - stevenragnarok@intrinsic.ai
   maintainers: true
-package_whitelist:
-  - roscpp
 repositories:
   keys:
   - |

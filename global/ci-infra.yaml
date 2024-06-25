@@ -85,7 +85,12 @@ repositories:
   urls:
   - http://repos.ros.org/repos/ros_bootstrap
 targets:
+  debian:
+    trixie:
+      amd64:
   ubuntu:
+    jammy:
+      amd64:
     noble:
       amd64:
 type: ci-build

@@ -1,0 +1,195 @@
+%YAML 1.1
+---
+repositories:
+  bloom:
+    type: git
+    url: https://github.com/ros-infrastructure/bloom.git
+    version: master
+  catkin-sphinx:
+    type: git
+    url: https://github.com/ros-infrastructure/catkin-sphinx.git
+    version: master
+  catkin_pkg:
+    type: git
+    url: https://github.com/ros-infrastructure/catkin_pkg.git
+    version: master
+  src/colcon-alias:
+    type: git
+    url: https://github.com/colcon/colcon-alias.git
+    version: main
+  src/colcon-argcomplete:
+    type: git
+    url: https://github.com/colcon/colcon-argcomplete.git
+    version: master
+  src/colcon-bash:
+    type: git
+    url: https://github.com/colcon/colcon-bash.git
+    version: master
+  src/colcon-cargo:
+    type: git
+    url: https://github.com/colcon/colcon-cargo.git
+    version: main
+  src/colcon-cd:
+    type: git
+    url: https://github.com/colcon/colcon-cd.git
+    version: master
+  src/colcon-clean:
+    type: git
+    url: https://github.com/colcon/colcon-clean.git
+    version: master
+  src/colcon-cmake:
+    type: git
+    url: https://github.com/colcon/colcon-cmake.git
+    version: master
+  src/colcon-common-extensions:
+    type: git
+    url: https://github.com/colcon/colcon-common-extensions.git
+    version: master
+  src/colcon-core:
+    type: git
+    url: https://github.com/colcon/colcon-core.git
+    version: master
+  src/colcon-coveragepy-result:
+    type: git
+    url: https://github.com/colcon/colcon-coveragepy-result.git
+    version: master
+  src/colcon-defaults:
+    type: git
+    url: https://github.com/colcon/colcon-defaults.git
+    version: master
+  src/colcon-devtools:
+    type: git
+    url: https://github.com/colcon/colcon-devtools.git
+    version: master
+  src/colcon-ed:
+    type: git
+    url: https://github.com/colcon/colcon-ed.git
+    version: master
+  src/colcon-hardware-acceleration:
+    type: git
+    url: https://github.com/colcon/colcon-hardware-acceleration.git
+    version: main
+  src/colcon-installed-package-information:
+    type: git
+    url: https://github.com/colcon/colcon-installed-package-information.git
+    version: main
+  src/colcon-lcov-result:
+    type: git
+    url: https://github.com/colcon/colcon-lcov-result.git
+    version: master
+  src/colcon-library-path:
+    type: git
+    url: https://github.com/colcon/colcon-library-path.git
+    version: master
+  src/colcon-meson:
+    type: git
+    url: https://github.com/colcon/colcon-meson.git
+    version: main
+  src/colcon-metadata:
+    type: git
+    url: https://github.com/colcon/colcon-metadata.git
+    version: master
+  src/colcon-mixin:
+    type: git
+    url: https://github.com/colcon/colcon-mixin.git
+    version: master
+  src/colcon-notification:
+    type: git
+    url: https://github.com/colcon/colcon-notification.git
+    version: master
+  src/colcon-output:
+    type: git
+    url: https://github.com/colcon/colcon-output.git
+    version: master
+  src/colcon-override-check:
+    type: git
+    url: https://github.com/colcon/colcon-override-check.git
+    version: main
+  src/colcon-package-information:
+    type: git
+    url: https://github.com/colcon/colcon-package-information.git
+    version: master
+  src/colcon-package-selection:
+    type: git
+    url: https://github.com/colcon/colcon-package-selection.git
+    version: master
+  src/colcon-parallel-executor:
+    type: git
+    url: https://github.com/colcon/colcon-parallel-executor.git
+    version: master
+  src/colcon-pkg-config:
+    type: git
+    url: https://github.com/colcon/colcon-pkg-config.git
+    version: master
+  src/colcon-powershell:
+    type: git
+    url: https://github.com/colcon/colcon-powershell.git
+    version: master
+  src/colcon-python-setup-py:
+    type: git
+    url: https://github.com/colcon/colcon-python-setup-py.git
+    version: master
+  src/colcon-recursive-crawl:
+    type: git
+    url: https://github.com/colcon/colcon-recursive-crawl.git
+    version: master
+  src/colcon-rerun:
+    type: git
+    url: https://github.com/colcon/colcon-rerun.git
+    version: main
+  src/colcon-ros:
+    type: git
+    url: https://github.com/colcon/colcon-ros.git
+    version: master
+  src/colcon-ros-bazel:
+    type: git
+    url: https://github.com/colcon/colcon-ros-bazel.git
+    version: master
+  src/colcon-ros-cargo:
+    type: git
+    url: https://github.com/colcon/colcon-ros-cargo.git
+    version: main
+  src/colcon-ros-domain-id-coordinator:
+    type: git
+    url: https://github.com/colcon/colcon-ros-domain-id-coordinator.git
+    version: main
+  src/colcon-spawn-shell:
+    type: git
+    url: https://github.com/colcon/colcon-spawn-shell.git
+    version: develop
+  src/colcon-test-result:
+    type: git
+    url: https://github.com/colcon/colcon-test-result.git
+    version: master
+  src/colcon-zsh:
+    type: git
+    url: https://github.com/colcon/colcon-zsh.git
+    version: master
+  src/template-package:
+    type: git
+    url: https://github.com/colcon/template-package.git
+    version: main
+  rosdep:
+    type: git
+    url: https://github.com/ros-infrastructure/rosdep.git
+    version: master
+  rosdistro:
+    type: git
+    url: https://github.com/ros-infrastructure/rosdistro.git
+    version: master
+  rosdoc2:
+    type: git
+    url: https://github.com/ros-infrastructure/rosdoc2.git
+    version: main
+  rosinstall_generator:
+    type: git
+    url: https://github.com/ros-infrastructure/rosinstall_generator.git
+    version: master
+  rospkg:
+    type: git
+    url: https://github.com/ros-infrastructure/rospkg.git
+    version: master
+  superflore:
+    type: git
+    url: https://github.com/ros-infrastructure/superflore.git
+    version: master

@@ -36,7 +36,7 @@ distributions:
     doc_builds:
       default: melodic/doc-build.yaml
 doc_builds:
-  ros2-documentation: ros2-documentation-build.yaml
+  ros2-documentation: doc-ros2-documentation.yaml
   rosindex: doc-rosindex.yaml
   independent: doc-independent-build.yaml
 jenkins_url: https://build.test.ros2.org

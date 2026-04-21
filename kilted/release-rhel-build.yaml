@@ -18,6 +18,8 @@ package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - ament_black  # python3-uvloop and black have no RPM packages for RHEL
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3
+- camera_aravis2  # aravis-dev has no RPM package for RHEL
+- camera_aravis2_msgs  # aravis-dev has no RPM package for RHEL
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
 - costmap_queue   # Nav2 will not support RHEL
 - dwb_core  # Nav2 will not support RHEL

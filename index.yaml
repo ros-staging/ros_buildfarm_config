@@ -95,6 +95,17 @@ distributions:
       unv8: kilted/release-ubuntu-arm64-build.yaml
     source_builds:
       default: kilted/source-build.yaml
+  lyrical:
+    doc_builds:
+      default: lyrical/doc-build.yaml
+    notification_emails:
+    - ros2-buildfarm-rolling@googlegroups.com
+    release_builds:
+      default: lyrical/release-build.yaml
+      rhel: lyrical/release-rhel-build.yaml
+      armv8: lyrical/release-ubuntu-arm64-build.yaml
+    source_builds:
+      default: lyrical/source-build.yaml
   rolling:
     ci_builds:
       benchmark: rolling/ci-benchmark.yaml

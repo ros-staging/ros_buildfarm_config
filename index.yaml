@@ -7,6 +7,10 @@ distributions:
   addon:
     release_builds:
       default: addon/release-build-addon.yaml
+  cargotest:
+    release_builds:
+      default: cargotest/release-build.yaml
+      rhel: cargotest/release-rhel-build.yaml
   dashing:
     release_builds:
       default: dashing/release-build-addon.yaml

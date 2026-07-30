@@ -13,8 +13,7 @@ jenkins_source_job_priority: 70
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - steven+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-rolling@googlegroups.com
+  - cristobal.arroyo@ekumenlabs.com
   maintainers: true
 package_blacklist:
 - kortex_api  # Kinova does not provide arm64, only armv7. https://github.com/PickNikRobotics/ros2_kortex/issues/158
@@ -32,50 +31,38 @@ repositories:
   keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
-    Version: GnuPG v1
 
-    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
-    =9IZg
-    -----END PGP PUBLIC KEY BLOCK-----
+    mQINBGYUJCYBEADXpKyb8PqEdQFXqW3iUWvfub0jd6cD0LJE9Huh4dCO0oStJzFJ
+    Ml9RJw5oBZA5zb08PysK4aRKr8Abd0I25EPYOe96I+S5zYNHBKosdMRDUwUYGK0H
+    41ih4NJ3hJ7BVivdBWln8CVPthUy4bNjaKAsNRB9qgcCc/DM6GTG/qD5pASGa2op
+    kB7KyeDrQ7Ykuz+vufteXO2k/LipSlzKGICmZp2907x9JSj/NywLR69pDm6fDjKo
+    DAkWFD5SrycRgvjBIM7hZk8BSs4XElYwPYOBtfSrf/yALg+PSFPO8NqlL0SLWCDe
+    kY78TYSrIJBrEghNKp2NuDeHjc0F775ncUs4i8LKX/RkEbSsGBgVH7cSwX5FTaMf
+    AkNzcfkjnpIT90XLkxoLlqdkI7A8jRMlnjWlwSBEPT4ouAQbpxHtk6ZZOgN+OX12
+    6knzaaIn7EZqqou+KsnoibWw+2l75/CuMk/bYJ/U8deMQUnQs/qct3CujeGE2Fvx
+    IeP+YZQkh2dsnKhwPPHTmOsb0WjFpI8yVP+F1GVBtCvLbOY9gwmioZvKhnBHVcPC
+    UqQvgwmZtOY0HREfaj4JbMkLqbyAnJik/gTFnGNStH4ADj+nfUhdHTGGiCpkDpdX
+    5nPGM6H+yEhtd5n8AK+tyosdPHvmD3SFvWh+j/SwZsheDZlNBawiOdhALQARAQAB
+    tEdST1MgQnVpbGRmYXJtIFNUQUdJTkcgKFJPUyBCdWlsZGZhcm0gU1RBR0lORykg
+    PHN0ZXZlbkBvcGVucm9ib3RpY3Mub3JnPokCVwQTAQgAQQIbAwULCQgHAgIiAgYV
+    CgkICwIEFgIDAQIeBwIXgBYhBFMIeJMTPRbwRZ0jBUBQkdYdTBqoBQJqAzv9BQkH
+    BhvXAAoJEEBQkdYdTBqosHEQAJtz7XhdX9y3pvNkUSF0/CYr60Hr8g0WZuj6VJuz
+    w2MQ3O8DlnUcxKtFL9V7Xto0Kc4x7LTkqgNhpKw676TJ8jnyl7fDeBc9jMaIf2vZ
+    umFkkwLBhY9zAwenT2OwpX6QLeLcmsnTShoubV0p+l693a8Hk0iX1iULs3nIYHxs
+    t9OAW0mMO+5fch0Tfo4zc7T9zyqHZVkW11xn6ToSbG6XZ/pPGynbt/NnotA96T08
+    S3bGJVU2+4vl1EYhIUvUOALm6MhuvP1fgD0o3W3xN6DcfbVqtpuN3YzW1NiYf47b
+    Yq2TRTvRWLgDKYN0hWuUDlGhQG+kmvaAl6KHhimkCTiWlfkkLGP/qtNZAgkZf8PJ
+    Dyst/N1RFOMLxKtCjPGp4TtgK3fw+Fngf38/wCOl8BHvB3d4MEj+Dqk5vOZw/UcR
+    tChqRvJgBE65S+oymn5T0xqrqhqOiyz0ZQ3dG1FdUmME7m+6FFe0JdV6zKv9AjDI
+    8uj7JHNAdqZMZLA3JwCJodZ0qzgUxXbr0mQKOkE6FUjBEGVDmsSnav3RuId1A5QX
+    D8I6H3T5fpcxpCXlns2vNtLBtGVEYSeK0+TbFj1K7REPBZCkZbPy9HhttQtCCGI2
+    kyk7vauky58o6uQArX9A3ZKIVuYV6lV7gBKVFKWsu37k4HXES5la4HOl9LkdY5A7
+    NCVR
+    =xhuY
+    -----END PGP PUBLIC KEY BLOCK------
   urls:
-  - http://repo.ros2.org/ubuntu/building
-target_repository: http://repo.ros2.org/ubuntu/building
+  - http://repo.test.ros2.org/ubuntu/building
+target_repository: http://repo.test.ros2.org/ubuntu/building
 targets:
   ubuntu:
     resolute:

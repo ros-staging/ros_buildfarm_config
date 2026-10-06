@@ -109,7 +109,8 @@ package_ignore_list:
 - rosidlcpp_typesupport_introspection_cpp  # Build fails on RHEL
 - rti_connext_dds_cmake_module  # No RPM package for Connext
 sync:
-  package_count: 400
+  auto_trigger_main: true
+  package_percent: 60
   packages: [desktop]
 repositories:
   keys:
